@@ -1,0 +1,16 @@
+{
+  "name": "skills-hello-github-actions",
+  "version": "1.0.0",
+  "description": "<header>",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "webpack": "^5.103.0"
+  }
+}
