@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>skills-hello-github-actions</title>
+<style>
+  :root { color-scheme: dark; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: #0b0d14; color: #e6e6e6;
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  .card {
+    max-width: 640px; padding: 48px 40px; margin: 24px;
+    background: #12141d; border: 1px solid #262a3a; border-radius: 16px;
+  }
+  h1 { font-size: 1.5rem; margin-bottom: 8px; letter-spacing: 0.5px; }
+  h1 span { color: #6366f1; }
+  .tagline { color: #9aa1b5; margin-bottom: 28px; font-size: 0.95rem; }
+  ul { list-style: none; margin-bottom: 28px; }
+  li { padding: 6px 0; color: #c6cad8; font-size: 0.92rem; display: flex; gap: 10px; align-items: baseline; }
+  li::before { content: "\2713"; color: #4ade80; font-weight: bold; }
+  .links { display: flex; gap: 12px; flex-wrap: wrap; }
+  a.btn {
+    display: inline-block; padding: 10px 18px; border-radius: 8px;
+    background: #6366f1; color: #fff; text-decoration: none; font-weight: 600; font-size: 0.9rem;
+  }
+  a.btn.ghost { background: transparent; border: 1px solid #363b52; color: #c6cad8; }
+  a.btn:hover { opacity: 0.9; }
+  .foot { margin-top: 24px; color: #5c6274; font-size: 0.8rem; }
+</style>
+</head>
+<body>
+  <main class="card">
+    <h1>skills-hello-github-actions <span>&#9998;</span></h1>
+    <p class="tagline">A GitHub Skills course repository: &ldquo;Hello GitHub Actions&rdquo;.</p>
+    <ul>
+      <li>CI workflow (.github/workflows/ci.yml) runs on every push and pull request</li>
+      <li>Jest test suite passes &mdash; Node 20, checkout@v6, setup-node@v5</li>
+      <li>Dependabot keeps GitHub Actions versions current</li>
+      <li>Cloudflare Pages build runs the tests, then publishes this page</li>
+    </ul>
+    <div class="links">
+      <a class="btn" href="https://github.com/rintuchowdory/skills-hello-github-actions">View the repository</a>
+      <a class="btn ghost" href="https://github.com/rintuchowdory/skills-hello-github-actions/actions">CI status</a>
+    </div>
+    <p class="foot">This page is the project&rsquo;s static landing site. The real content lives in the repository.</p>
+  </main>
+</body>
+</html>
