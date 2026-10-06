@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 name: CI
-=======
-name: Node.js CI
->>>>>>> 5a4ba19 (Initial commit)
 
 on:
   push:
@@ -14,32 +10,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-<<<<<<< HEAD
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v5
         with:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Run tests
         run: npm test
-=======
-    strategy:
-      matrix:
-        node-version: [20.x]
-
-    steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm test
->>>>>>> 5a4ba19 (Initial commit)
